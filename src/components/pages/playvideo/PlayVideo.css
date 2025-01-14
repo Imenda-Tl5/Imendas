@@ -1,0 +1,127 @@
+.play-video{
+
+padding-top: 12px;    display: flex;
+gap: 10%;
+flex-wrap: wrap;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 49%;
+}
+.main-content{
+    padding: 10px;
+}
+.main-content .top {
+    margin-bottom: 12px;
+}
+
+.main-content .top iframe {
+    width:57vw; /* Adjusts dynamically */
+    height: 30vw;
+    border-radius: 12px;
+    margin-bottom: 9px;
+}
+
+.main-content .top h3 {
+    font-size: 1.5rem;
+    margin-left: 12px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+@media (max-width:1140px) {
+    .main-content .top iframe{
+width: 652px;
+height: 367px;
+    }
+    .play-video{
+        flex-direction: column;
+    }
+    .main-content {
+width: 100%;
+    }
+    .main-content .top{
+        width: 100%;
+    }
+    .main-content .top iframe{
+        width: 100%;
+        margin-right: 60px;
+    }
+
+}
+.main-content-info {
+    display: flex;
+}
+
+.main-content-info .main-content-details img,
+.comment img {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+
+.main-content-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.main-content-details .like-section {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    transform: scale(0.5);
+    padding: 10px;
+    color: white;
+    gap: 35px;
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.like-section img {
+    cursor: pointer;
+}
+
+.like-section:hover {
+    transform: scale(0.55);
+}
+
+.vid-info-description {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.comments {
+    margin-left: 12px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.comments h3 {
+    margin-bottom: 12px;
+}
+
+.comments .comment h4 {
+    margin: 5px 0 3px;
+    color: rgb(37, 37, 37);
+}
+
+.comment .comment-details {
+    width: 100%;
+    padding: 7px;
+}

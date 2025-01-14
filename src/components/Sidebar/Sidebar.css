@@ -1,0 +1,50 @@
+.sidebar{
+    position:fixed;
+    left: 0;
+    padding-top: 40px;
+    top: 15vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 10%;
+    padding: 13px;
+    padding-left: 20px;
+}
+.sidebar .subscriptions img{
+    width: 50px;
+
+}
+.subscriptions h1{
+    font-size: 13px;
+    margin-top: 12px;
+    color: gray;
+    margin-bottom: 12px;
+}
+.subscriptions h3{
+    font-size: 12px;
+}
+.side-links svg{
+    fill: rgb(51, 50, 50);
+}
+.side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 40%;
+    margin-bottom: 12px;
+}
+
+.side-link{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+cursor: pointer;
+}
+
+.side-link.active p{
+border-bottom: 2px solid red;
+}
+.side-link.active svg{
+    fill: red;
+}
